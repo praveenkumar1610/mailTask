@@ -1,7 +1,18 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './home.css'
+import Input from '../components/input'
+import {useHistory} from 'react-router-dom'
+
 
 export default function Home() {
+    const [value,setValue]=useState("");
+    const history=useHistory();
+
+
+    const handleSubmit=()=>{
+       history.push(`/signin/${value}`)
+    }
+
     return (
         <div>
             <div className="title">
@@ -9,14 +20,10 @@ export default function Home() {
             </div>
             <div className="form">
                 <div className="label">
-                    <label>Email</label><br/>
-                    <input type="text"></input>
+                    <label>UserName</label><br/>
+                    <Input type="text" value={value} placeholder="Enter the UserName" onChange={(e)=>setValue(e.target.value)}/>
                 </div>
-                <div className="label">
-                    <label>password</label><br/>
-                    <input type="password"></input>
-                </div>
-                <button className="login">Login</button>
+                <button className="login" onClick={handleSubmit}>Login</button>
             </div>
         </div>
     )

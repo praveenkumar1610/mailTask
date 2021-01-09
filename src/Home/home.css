@@ -1,27 +1,50 @@
 .title {
    text-align: center;
    margin-top: 150px;
+   font-family:'verdana'
 }
 
 .form{
     display: block;
-    margin: 10px 50px 50px 550px;
+    margin: 10px 550px 10px 550px;
+    justify-content: center;
 }
 
 .login{
     background-color: green;
     border-radius: 10px;
     margin-top: 30px;
+    margin-left: 140px;
     box-shadow: 50px;
+    font-family:'verdana';
+    width:180px;
+    height:25px;
+    font-weight: bold;
 }
 
 .label{
     margin-top:20px;
+    margin-left:150px;
 }
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:700px){
     div.form{
         display: block;
-        margin:10px 50px 50px 90px
+        margin:10px 50px 50px 50px;
+    }
+    div.label{
+        margin-top:20px;
+        margin-left:50px;
+    }
+    button.login{
+        background-color: green;
+        border-radius: 10px;
+        margin-top: 30px;
+        box-shadow: 50px;
+        font-family:'verdana';
+        width:180px;
+        height:25px;
+        font-weight: bold;
+        margin-left: 50px;
     }
 }
