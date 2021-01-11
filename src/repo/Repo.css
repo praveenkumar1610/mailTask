@@ -16,9 +16,7 @@
 .nameLayout{
     display: flex;
     justify-content: center;
-    width:600px;
-    margin-left: 20px;
-    margin-right: 20px;
+    width:750px;
     background-color: pink;
 }
 
@@ -27,11 +25,23 @@
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 400px;
-    margin-right: 350px;
+    margin-right: 450px;
     display: flex;
     justify-content: space-between;
  }
 
+ .pagination {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+ }
+
+ .pagination :active{
+    background-color: dodgerblue;
+    color: white;
+ }
 
 @media only screen and (max-width:700px){
     div.layout{
