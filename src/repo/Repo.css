@@ -16,7 +16,7 @@
 .nameLayout{
     display: flex;
     justify-content: center;
-    width:720px;
+    width:600px;
     margin-left: 20px;
     margin-right: 20px;
     background-color: pink;
@@ -26,8 +26,8 @@
 .buttonLayout{
     margin-top: 50px;
     margin-bottom: 50px;
-    margin-left: 370px;
-    margin-right: 420px;
+    margin-left: 400px;
+    margin-right: 350px;
     display: flex;
     justify-content: space-between;
  }
@@ -35,11 +35,28 @@
 
 @media only screen and (max-width:700px){
     div.layout{
-        width:150%;
+        width:100%;
         margin-left: 10px;
         margin-top: 50px;
     }
     img.profile{
         width: 100px;
     }
+    .nameLayout{
+        display: flex;
+        justify-content: center;
+        width:500px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: pink;
+    }
+    .buttonLayout{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+        margin-right: px;
+        display: flex;
+        width: 500px;
+        justify-content: space-between;
+     }
 }
